@@ -1,0 +1,19 @@
+package br.com.alura.java.io.teste;
+
+import java.io.FileWriter;
+
+public class TesteEscrita2 {
+	public static void main(String[] args) throws Exception {
+
+//		OutputStream fos = new FileOutputStream("Alura-IO-teste2");
+//		Writer osw = new OutputStreamWriter(fos);
+//		BufferedWriter bw = new BufferedWriter(osw);
+
+		FileWriter fw = new FileWriter("Alura-IO-teste2");
+		fw.write("Sangatsu no lion");
+		fw.write(System.lineSeparator());
+		fw.write("Non Non Byori");
+
+		fw.close();
+	}
+}

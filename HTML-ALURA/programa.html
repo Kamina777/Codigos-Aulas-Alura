@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha(linha){
+		for(i = 0; i < linha; i++){
+			document.write("<br>");
+		}
+	}
+	function mostra(escrita,quebraDeLinha){
+		document.write(escrita);
+		pulaLinha(quebraDeLinha);
+	}
+	
+	var ano = 2022;
+	
+	mostra("Matheus tem " + (ano - 1994) + " anos",1);
+	mostra(("Ieda tem " + (ano - 1973) + " anos"),1);
+	mostra(("Jesiel tem " + (ano - 1970) + " anos"),1);
+	mostra(("Barbara tem " + (ano - 1997) + " anos"),1);
+	mostra(("Sarah tem " + (ano - 2009) + " anos"),1);
+
+	
+</script>

@@ -1,0 +1,26 @@
+package br.com.bytebank.banco.teste.io;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+import br.com.banco.Modelo.Cliente;
+import br.com.banco.Modelo.ContaCorrente;
+
+public class TesteSerializacao {
+	public static void main(String[] args) {
+		
+		Cliente matheus = new Cliente("Matheu Alves", "122-037-106-83", "Engenheiro");
+//		System.out.println(matheus);
+		
+		ContaCorrente cc = new ContaCorrente(matheus, 142, 360014);
+		
+//		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("cliente.bin"));
+//		oos.writeObject(cliente);
+//		oos.close();
+//		
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("cc.bin"));
+		Cliente cliente = (Cliente) ois.readObject();
+		ois.close();
+		System.out.println(cliente);
+	}
+}

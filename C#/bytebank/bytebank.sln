@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bytebank", "bytebank\bytebank.csproj", "{23564B77-0A1B-4193-94CA-D8F654A330DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bytebank_ADM", "bytebank_ADM\bytebank_ADM.csproj", "{DCE9E8B8-DDDF-4347-88AE-9A8DFF860B9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23564B77-0A1B-4193-94CA-D8F654A330DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23564B77-0A1B-4193-94CA-D8F654A330DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23564B77-0A1B-4193-94CA-D8F654A330DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23564B77-0A1B-4193-94CA-D8F654A330DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCE9E8B8-DDDF-4347-88AE-9A8DFF860B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCE9E8B8-DDDF-4347-88AE-9A8DFF860B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCE9E8B8-DDDF-4347-88AE-9A8DFF860B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCE9E8B8-DDDF-4347-88AE-9A8DFF860B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D128D22-5CA0-40A5-91AC-C58607D59324}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha(linha){
+		for(i = 0; i < linha; i++){
+			document.write("<br>");
+		}
+	}
+	function mostra(escrita){
+		document.write(escrita);
+		pulaLinha(1);
+	}
+	
+	function imc(peso, altura){
+		return (peso/(altura^2));
+	}
+
+	var alturaInformada = parseInt(prompt("Informe sua altura: "));
+	var pesoInformado = parseInt(prompt("Informe seu peso: "));
+	var calculoImc = imc(pesoInformado,alturaInformada)
+	
+	mostra("Seu IMC é: " + calculoImc);
+	
+	if(calculoImc <= 18.5){
+		mostra("IMC Baixo");
+	}
+	if(calculoImc > 18.5 && calculoImc <= 35){
+		mostra("IMC Ideal");
+	}
+	if(calculoImc > 35){
+		mostra("IMC Alto");
+	}
+	
+	
+</script>

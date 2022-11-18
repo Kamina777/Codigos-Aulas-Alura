@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;bytebank-biblioteca/src/TesteBiblioteca.java&apos;" deleteContents="false" description="Delete resource &apos;bytebank-biblioteca/src/TesteBiblioteca.java&apos;" element1="/bytebank-biblioteca/src/TesteBiblioteca.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1666961318838"/>
+</session>

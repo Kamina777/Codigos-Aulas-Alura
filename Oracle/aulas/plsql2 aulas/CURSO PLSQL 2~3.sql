@@ -1,0 +1,40 @@
+SELECT * FROM PRODUTO_VENDA_EXERCICIO ORDER BY ID;
+
+SET SERVEROUTPUT ON;
+DECLARE
+    v_ID NUMBER := 1;
+    CONTADOR NUMBER;
+    SUM_VALOR_TOTAL PRODUTO_VENDA_EXERCICIO.VALOR_TOTAL%type := 0;
+    VALOR_TOTAL_ATUAL PRODUTO_VENDA_EXERCICIO.VALOR_TOTAL%type;
+BEGIN
+    SELECT COUNT(*) INTO CONTADOR FROM PRODUTO_VENDA_EXERCICIO;
+    FOR v_ID IN 1.. CONTADOR LOOP
+        SELECT VALOR_TOTAL INTO VALOR_TOTAL_ATUAL FROM PRODUTO_VENDA_EXERCICIO WHERE ID = v_ID;
+        IF SUM_VALOR_TOTAL <= 20000 THEN
+            SUM_VALOR_TOTAL := SUM_VALOR_TOTAL + VALOR_TOTAL_ATUAL;
+            --DBMS_OUTPUT.PUT_LINE(v_ID);
+        ELSE
+            DBMS_OUTPUT.PUT_LINE(v_ID);
+            EXIT;
+        END IF;
+    END LOOP;
+    --DBMS_OUTPUT.PUT_LINE(v_ID);
+END;
+
+create or replace PROCEDURE SOMA_VENDAS 
+(p_VENDA_LIMITE IN produto_venda_exercicio.valor_total%type, p_ID_RETORNO OUT produto_venda_exercicio.id%type)
+IS
+   v_ID produto_venda_exercicio.id%type := 1;
+   v_VALOR_TOTAL produto_venda_exercicio.valor_total%type;
+   v_VENDA_TOTAL produto_venda_exercicio.valor_total%type := 0;
+BEGIN
+   LOOP
+      SELECT VALOR_TOTAL INTO v_VALOR_TOTAL FROM PRODUTO_VENDA_EXERCICIO WHERE ID = v_ID;
+      v_VENDA_TOTAL := v_VENDA_TOTAL + v_VALOR_TOTAL;
+      IF v_VENDA_TOTAL >= p_VENDA_LIMITE THEN
+         EXIT;
+      END IF;
+      v_ID := v_ID + 1;
+   END LOOP;
+   p_ID_RETORNO := v_ID;
+END;    
