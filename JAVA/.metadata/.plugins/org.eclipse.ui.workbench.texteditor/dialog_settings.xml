@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value=" = new ObjectInputStream(new FileInputStream(&quot;objeto.bin&quot;));"/>
 		<list key="findhistory">
+			<item value="double randomNumber1 = rand.nextDouble()*(1000*Math.floor(Math.random()*(max-min+1)+min));"/>
 			<item value=" = new ObjectInputStream(new FileInputStream(&quot;objeto.bin&quot;));"/>
 			<item value="ois = new ObjectInputStream(new FileInputStream(&quot;objeto.bin&quot;));"/>
 			<item value="i"/>
