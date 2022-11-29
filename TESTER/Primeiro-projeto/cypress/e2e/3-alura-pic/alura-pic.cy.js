@@ -61,7 +61,7 @@ describe('Login e registro de usuarios alura pic', () => {
     })
 
     it('Login de usuario valido', () => {
-        cy.login('flavio','123')
+        cy.login(Cypress.env('userName'),Cypress.env('password'))
         cy.contains('a','(Logout)').should('be.visible');   
     })
 

@@ -1,11 +1,14 @@
 ﻿using System;
-class Programa
+namespace teste
 {
-    static void Main(string[] arg)
+    class Programa
     {
-        Console.WriteLine("PREFIRO JAVA");
-        Console.WriteLine("TECLE ENTER PARA FECHAR...");
-        Console.ReadLine();
+        static void Main(string[] arg)
+        {
+            Console.WriteLine("PREFIRO JAVA");
+            Console.WriteLine("TECLE ENTER PARA FECHAR...");
+            Console.ReadLine();
 
+        }
     }
 }

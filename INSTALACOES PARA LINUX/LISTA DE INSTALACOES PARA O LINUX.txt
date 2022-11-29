@@ -1,0 +1,3 @@
+#### Instalações VSCODE tester ####
+visual studio code
+npm install xlsx
