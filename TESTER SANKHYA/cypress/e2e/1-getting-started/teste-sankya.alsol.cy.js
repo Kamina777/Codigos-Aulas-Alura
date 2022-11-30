@@ -8,10 +8,13 @@ describe('testando sankhya',() => {
         cy.get('input[placeholder="Usuário"]').type(Cypress.env('loginAlsol'));
         cy.get('input[placeholder="Senha"]').type(Cypress.env('senhaAlsol'))      
         cy.contains('button', 'Entrar').click();
-        cy.get('input[placeholder="Pesquisar"]').click().type('Usuario');
-        cy.contains('td','Configurações » Controle de Acesso').click();
+        //cy.get('input[placeholder="Pesquisar"]').click().type('Usuario');
+        //cy.contains('td','Configurações » Controle de Acesso').click();
+        cy.contains('div','Menu do sistema').click();
         //cy.get('input[placeholder="Digite o que você procura"]').type(Cypress.env('usuarioEspelho'))
-        cy.get('input[placeholder="Digite o que você procura"]').type('teste')
-        
+        //cy.get('input[placeholder="Digite o que você procura"]').type('teste')
+        //cy.contains('span','Mostrar grade').click();
+
+        //<div class="Taskbar-icon icon-menu" orig-title="Menu do sistema"></div>
     })
 })
