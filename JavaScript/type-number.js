@@ -13,8 +13,8 @@
 
 /////////////////
 
-const idadeMinima = 18;
-const idadeCliente = 16;
+// const idadeMinima = 18;
+// const idadeCliente = 16;
 
 // if(idadeCliente >= idadeMinima)
 // {
@@ -24,6 +24,28 @@ const idadeCliente = 16;
 //     console.log("sadsfadsf")
 // }
 
-console.log(idadeCliente >= idadeMinima 
-    ?"pode entrar" 
-    : "Sarah lixo");
+// console.log(idadeCliente >= idadeMinima 
+//     ?"pode entrar" 
+//     : "Sarah lixo");
+
+// const nome = "Matheus";
+// const trabalho = "Programação";
+// const diversao = "Jogos/leitura";
+
+// const apresentacao = `Meu nome é ${nome}, 'trabalho' com ${trabalho} e minha diversão é ${diversao}`;
+// console.log(apresentacao);
+
+// let x = "";
+// console.log(x);
+// x = "oi";
+
+// function imprimeTexto(texto){
+//     console.log(texto)
+// }
+
+// function soma(num1, num2){
+//     return console.log(num1 + num2);
+// }
+
+// soma(10,2);
+
